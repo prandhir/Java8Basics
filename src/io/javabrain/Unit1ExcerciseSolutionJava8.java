@@ -27,7 +27,8 @@ public class Unit1ExcerciseSolutionJava8 {
             });*/
             Collections.sort(people , ( o1, o2) -> o1.getLastName().compareTo(o2.getLastName()));
 
-          printAll(people);
+          //printAll(people);
+            printConditional(people ,p -> true);
             //System.out.println("This is the list"+people);
             System.out.println("Empty line");
             //print peorple who have last name with c
@@ -54,14 +55,14 @@ public class Unit1ExcerciseSolutionJava8 {
             });*/
         }
 
-        private static void printCName(List<Person> people ){
+/*        private static void printCName(List<Person> people ){
             for(Person p :people){
                 if(p.getLastName().startsWith("C")){
                     System.out.println("This is the list"+p);
                 }
 
             }
-        }
+        }*/
 
         private static void printConditional(List<Person> people , Condition c){
             for(Person p :people){
@@ -72,11 +73,11 @@ public class Unit1ExcerciseSolutionJava8 {
             }
         }
 
-        private static void printAll(List<Person> people ){
+       /* private static void printAll(List<Person> people ){
             for(Person p :people){
                 System.out.println("This is the list"+p);
             }
-        }
+        }*/
 
         interface Condition{
             boolean test(Person p);
