@@ -1,4 +1,4 @@
-package io.javabrain;
+package io.javabrain.unit1;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -57,6 +57,7 @@ public class Unit1ExcerciseSolutionJava7 {
 
         }
     }
+
 
     private static void printAll(List<Person> people ){
         for(Person p :people){

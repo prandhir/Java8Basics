@@ -1,9 +1,9 @@
-package io.javabrain;
+package io.javabrain.unit1;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Unit1ExcerciseSolutionJava8 {
 
@@ -45,7 +45,7 @@ public class Unit1ExcerciseSolutionJava8 {
             printConditional(people ,p -> p.getLastName().startsWith("C"));
 
             //print name with condition
-            printConditional(people ,p -> p.getFirstName().startsWith("M"));
+            printConditionalWithGivenInterface(people ,p -> p.getFirstName().startsWith("M"));
 
           /*  printConditional(people ,new Condition() {
                 @Override
@@ -73,6 +73,15 @@ public class Unit1ExcerciseSolutionJava8 {
             }
         }
 
+
+    private static void printConditionalWithGivenInterface(List<Person> people , Predicate<Person> c){
+        for(Person p :people){
+            if(c.test(p)){
+                System.out.println("This is the list"+p);
+            }
+
+        }
+    }
        /* private static void printAll(List<Person> people ){
             for(Person p :people){
                 System.out.println("This is the list"+p);

@@ -1,4 +1,4 @@
-package io.javabrain;
+package io.javabrain.unit1;
 
 public class EnglishGreeting implements Greeting {
     @Override

@@ -1,6 +1,5 @@
-package io.javabrain;
+package io.javabrain.unit1;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
