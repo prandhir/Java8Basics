@@ -24,7 +24,7 @@ public class ThisReferenceExample {
         trf.doProcess(20,new Process(){
 
             @Override
-            public void process(int i) {
+            public void dffe54(int i) {
                 System.out.println("This is inner class" + i);
                 //GThis will work cause this is treated as reference to the inner class.
                 System.out.println(this);
@@ -39,11 +39,11 @@ public class ThisReferenceExample {
     }
 
     private static void doProcess(int i , Process p){
-        p.process(i);
+        p.dffe54(i);
     }
 
     interface Process{
-        void process(int i);
+        void dffe54(int i);
     }
 
     @Override
