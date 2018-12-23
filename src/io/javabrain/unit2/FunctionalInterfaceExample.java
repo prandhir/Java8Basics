@@ -30,7 +30,6 @@ public class FunctionalInterfaceExample {
             System.out.println("Empty line");
             //print peorple who have last name with c
 
-
             printConditional(people ,p -> p.getLastName().startsWith("C") , p -> System.out.println("This is the list"+p));
 
             //print name with condition
